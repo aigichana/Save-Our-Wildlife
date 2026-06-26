@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A conservation campaign page dedicated to protecting endangered wildlife around the world."
+    />
+    <title>Save Our Wildlife</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Save Our Wildlife</h1>
+        <p class="tagline">We have got to protect our planet's wildlife.</p>
+      </header>
+
+      <section class="video-section" aria-label="Wildlife campaign video">
+        <div class="video-wrapper">
+          <video
+            id="wildlifeVideo"
+            controls
+            aria-label="Wildlife conservation promotional video"
+            poster=""
+          >
+            <source src="wildlife.mp4" type="video/mp4" />
+            <p>
+              Your browser does not support HTML5 video. 
+              <a href="wildlife.mp4">Download the video</a> instead.
+            </p>
+          </video>
+        </div>
+
+        <button
+          id="toggleBtn"
+          class="toggle-btn"
+          aria-controls="wildlifeVideo"
+          aria-pressed="false"
+        >
+          <span class="btn-icon" aria-hidden="true">▶</span>
+          <span class="btn-label">Play Video</span>
+        </button>
+      </section>
+
+      <section class="description" aria-label="Campaign description">
+        <p>
+          Across our planet, thousands of species face extinction due to habitat 
+          destruction, poaching, and climate change. Our conservation efforts focus 
+          on protecting natural habitats, rehabilitating injured animals, and 
+          advocating for stronger wildlife protection laws. Together, we can 
+          safeguard Earth's biodiversity for generations to come.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
